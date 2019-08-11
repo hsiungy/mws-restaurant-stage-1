@@ -193,3 +193,14 @@ getParameterByName = (name, url) => {
     return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
+/** 
+ * Register a server worker for the project.
+*/
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+  .register('/service-worker.js')
+  .catch(function (err) {
+    console.log(err);
+  })
+}
