@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,16 +12,16 @@
 
 <body>
   <header>
-    <nav>
+    <nav id="breadcrumb-main" role="navigation" aria-label="Breadcrumb">
       <h1><a href="/" aria-label="Home" tabindex="1">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" aria-label="location" role="application"></div>
     </section>
-    <section>
+    <section id="restaurants-container">
       <div class="filter-options">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" tabindex="2" role="tablist">

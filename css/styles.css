@@ -286,8 +286,71 @@ nav h1 a {
   color: #666;
 }
 
+@media screen and (max-width: 1023px) {
+  #reviews-list li {
+    width: 75%;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .inside header {
+    position: static;
+    width: 100%;
+  }
+
   .filter-options {
     flex-direction: column;
+  }
+
+  #maincontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inside #map-container {
+    width: 100%;
+    height: 300px;
+    top: 131px;
+    position: static;
+  }
+
+  #map-container {
+    width: 100%;
+    height: 100%;
+    top: 131px;
+    position: static;
+  }
+
+  #restaurants-container {
+    width: 100%;
+  }
+
+  #restaurant-container, #reviews-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #reviews-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #breadcrumb {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 31px;
+  }
+
+  #footer {
+    padding: 0;
   }
 }
